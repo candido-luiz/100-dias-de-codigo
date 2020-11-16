@@ -10,3 +10,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 
 |Dia|Histórico|
 |---|---------|
+|01|Estudei conceitos básicos de HTML|
