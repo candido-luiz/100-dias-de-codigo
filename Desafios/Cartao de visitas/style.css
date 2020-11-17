@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+.card{
+    width: 800px;
+    height: 400px;
+    background-image: url(./Imagens/backgorund.png);
+    background-size: cover;
+    margin: auto;
+}
+
+.name{
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 80px;
+    font-size: 40px;
+}
+#insta{
+    list-style-image: url(./Imagens/Insta.png);
+    margin-bottom: 10px;
+}
+#github{
+    list-style-image: url(./Imagens/GitHub-Mark-32px.png);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
