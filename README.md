@@ -14,3 +14,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |02|Estudei conceitos básicos de CSS e criei um cartão de visitas (pasta Desafios)|
 |03|Estudei as propriedas display, overflow e position do CSS|
 |04|Continuei estudando propriedades do CSS e começei a estudar conceitos de Responsividade|
+|05|Continuei estudando conceitos de Responsividade e Media query|
