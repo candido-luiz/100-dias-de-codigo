@@ -53,3 +53,28 @@ body{
 
     text-align: center;
 }
+
+@media screen and (max-width: 600px){
+    .logo{
+        float: none;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu ul{
+        float: none;
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+    }
+    .menu li{
+        float:none;
+        padding: 5px;
+        margin:0;
+        
+    }
+    .content{
+        height: calc(100vh - 150px);
+    }
+}
