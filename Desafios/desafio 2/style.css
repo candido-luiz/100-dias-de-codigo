@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: royalblue; */
+}
+.header{
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    background-color: orchid;
+    /* padding: 20px ; */
+}
+
+.logo{
+    float: left;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu li{
+    float:left;
+    padding:15px;
+    margin-left: 15px;
+}
+.menu li:hover{
+    background-color: darksalmon;
+}
+
+.content{
+    position: relative;
+    width: 80%;
+    height: calc(100vh - 48px);
+    margin: auto;
+    background-color: #ddd;
+}
+.presentation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#mainText{
+    font-size: 5vw;
+}
+.description{
+
+    text-align: center;
+}
