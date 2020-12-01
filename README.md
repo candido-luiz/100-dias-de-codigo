@@ -19,3 +19,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |07|Adicionei um media query ao template recriado (desafio 2 na pasta Desafios)|
 |08|Estudei as tags e atributos envolvidos na construção de um formulário|
 |09|Criei uma página de captura com o que estudei até aqui|
+|10|Revisei conceitos básicos de Javascript|
