@@ -20,3 +20,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |08|Estudei as tags e atributos envolvidos na construção de um formulário|
 |09|Criei uma página de captura com o que estudei até aqui|
 |10|Revisei conceitos básicos de Javascript|
+|11|Estudei como criar objetos e suas propriedades e métodos + declaração de variável com var, let e const|
