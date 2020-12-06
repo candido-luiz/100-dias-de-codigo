@@ -24,3 +24,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |12|Comecei a estudar a manipulação do HTML DOM com o javascript|
 |13|Aprendi como encontrar e alterar elementos html com o DOM, e também aprendi como criar eventos com o JS|
 |14|Com o que estudei até aqui, criei um conversor Binário para Decimal (pasta desafios)|
+|15|Mudei o código do conversor(pasta desafios) e estudei sobre JSON, localStorage e Timing Events|
