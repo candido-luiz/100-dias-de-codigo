@@ -25,3 +25,5 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |13|Aprendi como encontrar e alterar elementos html com o DOM, e também aprendi como criar eventos com o JS|
 |14|Com o que estudei até aqui, criei um conversor Binário para Decimal (pasta desafios)|
 |15|Mudei o código do conversor(pasta desafios) e estudei sobre JSON, localStorage e Timing Events|
+|16|Eliminei partes do código do conversor que não estavam sendo utilizadas|
+|17|Comecei a criar o Cause Effect App do repositório [app-ideas](https://github.com/florinpop17/app-ideas)|
