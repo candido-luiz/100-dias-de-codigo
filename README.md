@@ -27,4 +27,5 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |15|Mudei o código do conversor(pasta desafios) e estudei sobre JSON, localStorage e Timing Events|
 |16|Eliminei partes do código do conversor que não estavam sendo utilizadas|
 |17|Comecei a criar o Cause Effect App do repositório [app-ideas](https://github.com/florinpop17/app-ideas)|
-|18|Vi algumas formas de manipular atributos do HTML no JS, modifiquei o código do Cause Effect| 
+|18|Vi algumas formas de manipular atributos do HTML no JS, modifiquei o código do Cause Effect|
+|19|Estudei os conceitos de pseudo classes e elementos, transformações e variaveis no CSS| 
