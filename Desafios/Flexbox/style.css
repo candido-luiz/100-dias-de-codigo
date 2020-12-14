@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.container{
+#flex-container{
     max-width: 500px;
     height: 280px;
     border: black solid 1px;

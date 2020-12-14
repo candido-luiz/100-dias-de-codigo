@@ -6,11 +6,12 @@
     <title>Flexbox Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <div class="properties">
         <div id="flex-direction" class="options">
             <p onclick="trocar(this)">flex-direction</p>
             <ul>
+                <li><input type="radio" name="flex-direction" value="initial" checked>initial</li>
                 <li><input type="radio" name="flex-direction" value="column">column</li>
                 <li><input type="radio" name="flex-direction" value="column-reverse">column-reverse</li>
                 <li><input type="radio" name="flex-direction" value="row">row</li>
@@ -22,13 +23,14 @@
             <ul>
                 <li><input type="radio" name="flex-wrap" value="wrap">wrap</li>
                 <li><input type="radio" name="flex-wrap" value="wrap-reverse">wrap-reverse</li>
-                <li><input type="radio" name="flex-wrap" value="nowrap">nowrap</li>
+                <li><input type="radio" name="flex-wrap" value="nowrap" checked>nowrap</li>
             </ul>
         </div>
 
         <div id="justify-content" class="options">
             <p onclick="trocar(this)">justify-content</p>
             <ul>
+                <li><input type="radio" name="justify-content" value="initial" checked>initial</li>
                 <li><input type="radio" name="justify-content" value="flex-start">flex-start</li>
                 <li><input type="radio" name="justify-content" value="flex-end">flex-end</li>
                 <li><input type="radio" name="justify-content" value="center">center</li>
@@ -40,6 +42,7 @@
         <div id="align-items" class="options">
             <p onclick="trocar(this)">align-items</p>
             <ul>
+                <li><input type="radio" name="align-items" value="initial" checked>initial</li>
                 <li><input type="radio" name="align-items" value="stretch">stretch</li>
                 <li><input type="radio" name="align-items" value="center">center</li>
                 <li><input type="radio" name="align-items" value="flex-start">flex-start</li>
@@ -50,17 +53,19 @@
         <div id="align-content" class="options">
             <p onclick="trocar(this)">align-content</p>
             <ul>
+                <li><input type="radio" name="align-content" value="initial" checked>initial</li>
                 <li><input type="radio" name="align-content" value="stretch">stretch</li>
                 <li><input type="radio" name="align-content" value="flex-start">flex-start</li>
                 <li><input type="radio" name="align-content" value="flex-end">flex-end</li>
                 <li><input type="radio" name="align-content" value="center">center</li>
                 <li><input type="radio" name="align-content" value="space-between">space-between</li>
-                <li><input type="radio" name="align-content" value="space-around">space-around</li>
                 <li><input type="radio" name="align-content" value="space-evenly">space-evenly</li>
+                <li><input type="radio" name="align-content" value="space-around">space-around</li>
+                
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div id="flex-container">
         <div class="square">1</div>
         <div class="square">2</div>
         <div class="square">3</div>
