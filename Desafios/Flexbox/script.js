@@ -5,13 +5,13 @@ function trocar(p){
 let flexContainer = document.getElementById("flex-container");
 
 function carregar(){
-    let li = document.getElementsByTagName("li");
-    for(option of li){
-    option.addEventListener("click",addStyle);
-}
+    let input = document.getElementsByTagName("input");
+    for(option of input){
+        option.addEventListener("click",addStyle);
+    }
 }
 
 
 function addStyle(){
-    console.log(this.children[0]);
+    console.log(this);
 }
