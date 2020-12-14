@@ -13,5 +13,5 @@ function carregar(){
 
 
 function addStyle(){
-    console.log(this);
+    flexContainer.style.cssText += this.name + ":" + this.value;
 }
