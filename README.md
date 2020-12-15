@@ -30,3 +30,5 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |18|Vi algumas formas de manipular atributos do HTML no JS, modifiquei o código do Cause Effect|
 |19|Estudei os conceitos de pseudo classes e elementos, transformações e variaveis no CSS|
 |20|Estudei os conceitos do Flexbox no CSS e, para testar o aprendizado, resolvi desafios do [Flexbox Froggy](https://flexboxfroggy.com/)| 
+|21|Comecei a criar uma página para visualização das propriedades do flexbox (pasta desafios)|
+|22|Continuei a desenvolver a página de visualização e implementei suas funcionalidades|
