@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    background-color: #ddd;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    height:100vh;
+    justify-content: center;
+    align-content:center;
+}
+
+.grid-container > div{
+    color: white;
+    background-color: rgb(25, 102, 146);
+    padding: 10px;
+    border: black solid 1px;
+    text-align: center;
+}
+#result{
+    grid-column: 1/5;
+    background-color: white;
+}
