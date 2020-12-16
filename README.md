@@ -32,3 +32,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |20|Estudei os conceitos do Flexbox no CSS e, para testar o aprendizado, resolvi desafios do [Flexbox Froggy](https://flexboxfroggy.com/)| 
 |21|Comecei a criar uma página para visualização das propriedades do flexbox (pasta desafios)|
 |22|Continuei a desenvolver a página de visualização e implementei suas funcionalidades|
+|23|Estudei o Grid Layout do CSS e comecei a construir uma calculadora (pasta Desafios)|
