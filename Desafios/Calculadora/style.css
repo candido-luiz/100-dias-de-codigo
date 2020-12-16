@@ -13,13 +13,16 @@ body{
 }
 
 .grid-container > div{
-    color: white;
-    background-color: rgb(25, 102, 146);
+    background-color: rgb(175 204 220);
     padding: 10px;
     border: black solid 1px;
     text-align: center;
+    cursor: pointer;
 }
 #result{
     grid-column: 1/5;
     background-color: white;
+}
+.grid-container > div:hover{
+    background-color:#d3f5f5;
 }
