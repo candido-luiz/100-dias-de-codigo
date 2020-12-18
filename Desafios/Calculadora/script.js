@@ -1,13 +1,36 @@
+let vetor = []; // Vetor que armazenará o primeiro valor inserido e a operação escolhida
+vetor.length = 2;
 let result = document.getElementById("result");
 let numbers = document.getElementsByClassName("number");
+let operations = document.getElementsByClassName("operation");
+
+let needClearDisplay = false; // Será utilizada para limpar ou não display
 
 for(number of numbers){
     number.addEventListener("click",displayNumber);
 }
-
+for(operation of operations){
+    operation.addEventListener("click",executeOperation);
+}
 
 
 
 function displayNumber(){
-    result.innerText += this.innerText;
+    if(!needClearDisplay){ //verifica se uma operaçao foi solicitada
+        result.innerText += this.innerText;
+    }else{
+        clearDisplay(); // caso uma operaçao tenha sido solicitada, o display apaga ao inserir novo numero
+        needClearDisplay = false;
+        result.innerText = this.innerText;
+    }
+}
+
+function executeOperation(){
+    vetor[0] = result.innerText;
+    vetor[1] = this.innerText;
+    needClearDisplay = true;
+}
+
+function clearDisplay(){
+    result.innerText = "";
 }
