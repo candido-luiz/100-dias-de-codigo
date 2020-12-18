@@ -4,7 +4,8 @@ let display = document.getElementById("display");
 let numbers = document.getElementsByClassName("number");
 let operations = document.getElementsByClassName("operation");
 let equals = document.getElementById("equals");
-let result
+let clear = document.getElementById("clear");
+let result;
 let needClearDisplay = false; // Será utilizada para limpar ou não display
 
 for(number of numbers){
@@ -14,7 +15,7 @@ for(operation of operations){
     operation.addEventListener("click",executeOperation);
 }
 equals.addEventListener("click", showResult);
-
+clear.addEventListener("click", clearAll);
 
 function displayNumber(){
     if(!needClearDisplay){ //verifica se uma operaçao foi solicitada
@@ -59,6 +60,9 @@ function calculate(num1, operation, num2){
         case '/':
             opResult = parseInt(num1) / parseInt(num2);
             break;
+        case '%':
+            opResult = (parseInt(num1)/100) * parseInt(num2);
+            break;
         default:
             alert("Algo deu errado");    
     }
@@ -69,4 +73,10 @@ function showResult(){
     display.innerText = calculate(vetor[0],vetor[1],display.innerText);
     vetor[1] = undefined;
     needClearDisplay = true;
+}
+function clearAll(){
+    display.innerText = "";
+    vetor[0] = undefined;
+    vetor[1] = undefined;
+    needClearDisplay = false;
 }
