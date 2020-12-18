@@ -3,6 +3,7 @@ vetor.length = 2;
 let display = document.getElementById("display");
 let numbers = document.getElementsByClassName("number");
 let operations = document.getElementsByClassName("operation");
+let equals = document.getElementById("equals");
 let result
 let needClearDisplay = false; // Será utilizada para limpar ou não display
 
@@ -12,7 +13,7 @@ for(number of numbers){
 for(operation of operations){
     operation.addEventListener("click",executeOperation);
 }
-
+equals.addEventListener("click", showResult);
 
 
 function displayNumber(){
@@ -30,7 +31,7 @@ function executeOperation(){
         result = calculate(vetor[0],vetor[1],display.innerText);
         vetor[0] = result;
         vetor[1] = this.innerText;
-        console.log(result);
+        display.innerText = result;
     }else{
         //antes de fazer a atribuição abaixo, devo verificar se existe uma operação feita anteriormente 
         vetor[0] = display.innerText;
@@ -62,4 +63,10 @@ function calculate(num1, operation, num2){
             alert("Algo deu errado");    
     }
     return opResult;
+}
+
+function showResult(){
+    display.innerText = calculate(vetor[0],vetor[1],display.innerText);
+    vetor[1] = undefined;
+    needClearDisplay = true;
 }
