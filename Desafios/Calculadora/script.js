@@ -1,9 +1,9 @@
 let vetor = []; // Vetor que armazenará o primeiro valor inserido e a operação escolhida
 vetor.length = 2;
-let result = document.getElementById("result");
+let display = document.getElementById("display");
 let numbers = document.getElementsByClassName("number");
 let operations = document.getElementsByClassName("operation");
-
+let result
 let needClearDisplay = false; // Será utilizada para limpar ou não display
 
 for(number of numbers){
@@ -17,20 +17,49 @@ for(operation of operations){
 
 function displayNumber(){
     if(!needClearDisplay){ //verifica se uma operaçao foi solicitada
-        result.innerText += this.innerText;
+        display.innerText += this.innerText;
     }else{
         clearDisplay(); // caso uma operaçao tenha sido solicitada, o display apaga ao inserir novo numero
         needClearDisplay = false;
-        result.innerText = this.innerText;
+        display.innerText = this.innerText;
     }
 }
 
 function executeOperation(){
-    vetor[0] = result.innerText;
-    vetor[1] = this.innerText;
+    if(vetor[1] != undefined){
+        result = calculate(vetor[0],vetor[1],display.innerText);
+        vetor[0] = result;
+        vetor[1] = this.innerText;
+        console.log(result);
+    }else{
+        //antes de fazer a atribuição abaixo, devo verificar se existe uma operação feita anteriormente 
+        vetor[0] = display.innerText;
+        vetor[1] = this.innerText;
+        
+    }
     needClearDisplay = true;
 }
 
 function clearDisplay(){
-    result.innerText = "";
+    display.innerText = "";
+}
+function calculate(num1, operation, num2){
+    let opResult;
+    switch(operation){
+        case '+':
+            opResult = parseInt(num1) + parseInt(num2);
+           break;
+        case '-':
+            opResult = parseInt(num1) - parseInt(num2);
+            break;
+        case '*':
+            opResult = parseInt(num1) * parseInt(num2);
+            break;
+        case '/':
+            opResult = parseInt(num1) / parseInt(num2);
+            break;
+        default:
+            alert("Algo deu errado");    
+    }
+    return opResult;
 }
