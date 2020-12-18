@@ -33,3 +33,5 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |21|Comecei a criar uma página para visualização das propriedades do flexbox (pasta desafios)|
 |22|Continuei a desenvolver a página de visualização e implementei suas funcionalidades|
 |23|Estudei o Grid Layout do CSS e comecei a construir uma calculadora (pasta Desafios)|
+|24|Continuei desenvolvendo a calculadora, adicionando algumas funcionalidades e melhorando o design|
+|25|Desenvolvi a maior parte das funcionalidades da calculadora e estudei sobre animações e transições no CSS|
