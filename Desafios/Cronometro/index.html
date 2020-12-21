@@ -12,27 +12,27 @@
             <div class="option">
                 <div class="option-title">CONJUNTOS</div>
                 <div class="set-option">
-                    <div class="button">-</div>
-                    <div class="value">1</div>
-                    <div class="button">+</div>
+                    <div onclick="decrease()" class="button">-</div>
+                    <div id="conjuntos" class="value">1</div>
+                    <div onclick="increase()"class="button">+</div>
                 </div>
             </div>
       
             <div class="option">
                 <div class="option-title">TREINAR</div>
                 <div class="set-option">
-                    <div class="button">-</div>
-                    <div class="value">00:01</div>
-                    <div class="button">+</div>
+                    <div onclick="decreaseTime(this.parentElement.children[1])" class="button">-</div>
+                    <div id="treino" class="value">00:01</div>
+                    <div onclick="increaseTime(this.parentElement.children[1])" class="button">+</div>
                 </div>
             </div>
        
             <div class="option">
                 <div class="option-title">DESCANSAR</div>
                 <div class="set-option">
-                    <div class="button">-</div>
-                    <div class="value">00:01</div>
-                    <div class="button">+</div>
+                    <div onclick="decreaseTime(this.parentElement.children[1])" class="button">-</div>
+                    <div id="descanso" class="value">00:01</div>
+                    <div onclick="increaseTime(this.parentElement.children[1])" class="button">+</div>
                 </div>
             </div>
         </div>
@@ -44,5 +44,7 @@
             <div class="start">Começar</div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
