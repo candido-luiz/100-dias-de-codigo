@@ -35,3 +35,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |23|Estudei o Grid Layout do CSS e comecei a construir uma calculadora (pasta Desafios)|
 |24|Continuei desenvolvendo a calculadora, adicionando algumas funcionalidades e melhorando o design|
 |25|Desenvolvi a maior parte das funcionalidades da calculadora e estudei sobre animações e transições no CSS|
+|26|Comecei a criar um timer para treinos com opção de salvar diferentes treinos|
