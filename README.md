@@ -37,3 +37,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |25|Desenvolvi a maior parte das funcionalidades da calculadora e estudei sobre animações e transições no CSS|
 |26|Comecei a criar um timer para treinos com opção de salvar diferentes treinos|
 |27|Estudei outros conceitos de JS, como desestruturação de objetos e Arrow functions|
+|28|Estudei manipulação de Datas e métodos para manipulação de Arrays no JS|
