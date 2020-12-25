@@ -2,11 +2,16 @@ body{
     margin: 0;
     padding: 0;
 }
+section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 .container{
+    width: 170px;
     background-color: #dddddd;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .config{
     display: flex;
@@ -14,7 +19,22 @@ body{
     padding: 10px;
 }
 .valor{
-    width: 150px;
     height: 20px;
     background-color: cadetblue;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.setTimer{
+    display: flex;
+    flex-direction: column;
+}
+.setValor{
+    display: flex;
+}
+.valores{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }

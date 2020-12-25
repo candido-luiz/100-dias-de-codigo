@@ -7,27 +7,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="conjuntos" class="config">
-            <div>Conjuntos</div>
-            <div class="valor" id="valorConjuntos"></div>
+    <section>
+        <div class="container">
+            <div id="conjuntos" class="config">
+                <div class="center">Conjuntos</div>
+                <div id="valorConjuntos" class="valor"></div>
+            </div>
+            <div id="treino" class="config">
+                <div class="center">Treino</div>
+                <div  id="valorTreino" class="valor"></div>
+            </div>
+            <div id="descanso" class="config">
+                <div class="center">Descanso</div>
+                <div id="valorDescanso" class="valor"></div>
+            </div>
+            <div id="alterar" class="config">
+                <div >Alterar</div>    
+            </div>
+            <div id="comecar" class="config">
+                <div>Começar</div>
+            </div>
         </div>
-        <div id="treino" class="config">
-            <div>Treino</div>
-            <div class="valor" id="valorTreino"></div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div>Treinar/Descansar</div>
+            <div id="tempoTreino" class="valor">Tempo</div>
+            <div id="tempoDescanso" class="valor">conjuntos</div>
         </div>
-        <div id="descanso" class="config">
-            <div>Descanso</div>
-            <div class="valor" id="valorDescanso"></div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="setTimer">
+                <div>Conjuntos</div>
+                <input type="number" name="conjuntos" id="setConjuntos">
+            </div>
+
+            <div class="setTimer">
+                <div>Treino</div>
+                <div class="setValor">
+                    <div class="valores">
+                        <div>Minutos</div>
+                        <input type="number" name="minutosTreino" id="setTreinoMinutos">
+                    </div>
+                    <div class="valores">
+                        <div>Segundos</div>
+                        <input type="number" name="segundosTreino" id="setTreinoSegundos">
+                    </div>
+                </div>
+            </div>
+            <div class="setTimer">
+                <div>Descanso</div>
+                <div class="setValor">
+                    <div class="valores">
+                        <div>Minutos</div>
+                        <input type="number" name="minutosDescanso" id="setDescansoMinutos">
+                    </div>
+                    <div class="valores">
+                        <div>Segundos</div>
+                        <input type="number" name="segundosDescanso" id="setDescansoSegundos">
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div id="alterar" class="config">
-            <div>Alterar</div>    
-        </div>
-        <div id="comecar" class="config">
-            <div>Começar</div>
-        </div>
-        
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
