@@ -36,5 +36,8 @@ section{
 .valores{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+}
+.valores input{
+    width: 70%;
 }
