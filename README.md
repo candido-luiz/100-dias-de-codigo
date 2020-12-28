@@ -38,3 +38,5 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |26|Comecei a criar um timer para treinos com opção de salvar diferentes treinos|
 |27|Estudei outros conceitos de JS, como desestruturação de objetos e Arrow functions|
 |28|Estudei manipulação de Datas e métodos para manipulação de Arrays no JS|
+|29|Estudei os métodos includes e repeat, e aprendi como utilizar os operadores rest e spread|
+|30|Aprendia a utilizar o Object keys,values e entries e começei a estudar sobre js assíncrono|
