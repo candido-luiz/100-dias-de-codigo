@@ -41,3 +41,4 @@ Passar os próximos 100 dias estudando conceitos e tecnologias de Front-end.
 |29|Estudei os métodos includes e repeat, e aprendi como utilizar os operadores rest e spread|
 |30|Aprendi a utilizar o Object keys,values e entries e começei a estudar sobre js assíncrono|
 |31|Estudei mais sobre promises, async/await e como utilizar o fetch API no js|
+|--|A partir do dia 31, começei a focar meu tempo em construir sistemas utilizando o que aprendi até então, sem avançar para novos conteúdos. Farei isso por algumas semanas do mês de janeiro, até me sentir confortável com os códigos| 
