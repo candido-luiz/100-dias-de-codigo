@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div class="input">
+            <input type="text" name="username" id="name" placeholder="Usuário" required>
+            <span id="usernameAlert">Nome de usuário inválido!</span>
+        </div>
+        <div class="input">
+            <input type="password" name="password" id="password" placeholder="Senha" required>
+            <span id="passwordAlert">Senha inválida!</span>
+        </div>
+        <div class="input">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <span id="emailAlert">Email inválido!</span>
+        </div>
+        
+        <input type="submit" value="Login" id="submit" disabled>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

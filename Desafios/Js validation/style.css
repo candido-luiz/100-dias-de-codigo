@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width: 200px;
+    height: 35px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+.input{
+    display: flex;
+    position: relative;
+}
+span{
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    font-size: 10px;
+    color: red;
+}
