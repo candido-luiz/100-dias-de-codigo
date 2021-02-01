@@ -1,0 +1,9 @@
+:root{
+    --default-color: #ffffff;
+    --light-yellow: #fffd89;
+    --light-red: #ff7b7b;
+}
+
+input{
+    background-color: var(--default-color);
+}
