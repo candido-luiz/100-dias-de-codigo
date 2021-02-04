@@ -3,12 +3,12 @@ function carregar(){
     let menu = document.querySelector("nav ul");
 
     menuMobile.addEventListener('click', ()=>{
-        menu.style.width = '40%';
-        menu.style.visibility = "visible";
+        menu.classList.add("fadeIn");
+        
     });
 
     let close = document.querySelector("#close");
     close.addEventListener('click', ()=>{
-            menu.style.width ='0';
+            menu.classList.remove("fadeIn");
     });
 }

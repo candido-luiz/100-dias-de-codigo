@@ -279,10 +279,9 @@ footer .submit{
     header{
         height: auto;
     }
-    /* vou aletar o css para mostrar o menu caso o width for de 40% */
+
     nav ul{
         flex-direction: column;
-        /* visibility: hidden; */
         position: fixed;
         top: 0;
         right: 0;
@@ -308,6 +307,9 @@ footer .submit{
         margin-bottom: 10px;
         border: 0;
     }
+    .fadeIn{
+        width: 40%;
+    }
 }
 
 @media (max-width:480px){
@@ -328,6 +330,3 @@ footer .submit{
     }
 }
 
-.fadeOut{
-    width: 0;
-}
