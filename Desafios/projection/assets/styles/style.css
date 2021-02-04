@@ -1,0 +1,333 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;   
+}
+#initial{
+    position: relative;
+    padding-bottom: 30px;
+}
+.parallax{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.gray-bg{
+    background: rgba(75, 75, 93, 0.85);
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    color: white;
+    
+}
+.container{
+    flex:1;
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;        
+}
+header .container{
+    justify-content: space-between;
+    border-bottom: 2px solid #94878770;
+}
+
+.owner{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: width 0.5s ease-out;
+    
+}
+nav ul li{
+    margin-left: 25px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+#banner .container{
+    flex-direction: column;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.welcome h1{
+    font-size: 50px;
+    font-weight: lighter;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: lighter;
+}
+.services > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar{
+    width: 1px;
+    background-color: #94878770;
+}
+.services p{
+    margin: 0;
+    color: #9e9a9a;
+}
+.services .material-icons{
+    color: #6cc091;
+    font-size: 2em;
+}
+#banner .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+    
+}
+.button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #6cc091;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    transition: background-color 0.5s ease;
+}
+
+.button a:hover{
+    background-color: #7db49527;
+}
+#infos{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.info{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info h2{
+    max-width: 216px;
+    text-align: center;
+    color: #595969;
+    line-height: 35px;
+    font-weight: 500;
+}
+.info p{
+    max-width: 403px;
+    text-align: center;
+    color: #9e9a9a;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px #595969;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #6cc091;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: #ffffff;
+}
+footer .container{
+    flex-direction: column;
+    
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+.userInfo{
+    display: flex;
+}
+#userName{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+#userEmail{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.userInfo input{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6cc091;
+    border: 2px solid #99c3ac;
+    color: #ffffff;
+}
+#message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#message textarea{
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6cc091;
+    border: 2px solid #99c3ac;
+    color: #ffffff;
+}
+footer .submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#submit{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #6cc091;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#submit:hover{
+    background-color: #ffffff29;;
+}
+.menuMobile{
+    width: 20px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+.menuBar{
+    height: 3px;
+    background-color: #ffffff;
+}
+#close{
+    display: none;
+}
+@media (max-width:650px){
+    #banner{
+        padding-top: 10px;
+    }
+    .welcome h1{
+        font-size: 38px;
+    }
+    .services{
+        flex-direction: column;
+    }
+    #infos .container{
+        flex-direction: column;
+    }
+    .info{
+        margin-bottom: 60px;
+    }
+    .userInfo{
+        flex-direction: column;
+    }
+    #userName{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .menuMobile{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    header{
+        height: auto;
+    }
+    /* vou aletar o css para mostrar o menu caso o width for de 40% */
+    nav ul{
+        flex-direction: column;
+        /* visibility: hidden; */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: #6cc091;
+        box-shadow: -3px 0 10px #595969;
+        
+    }
+    nav ul li{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #94878770;
+        
+    }
+    #close{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0;
+    }
+}
+
+@media (max-width:480px){
+    .welcome h1{
+        font-size: 28px;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .button a{
+        width: 100%;
+        text-align: center;
+    }
+    .submit input{
+        width: 100%;
+    }
+}
+
+.fadeOut{
+    width: 0;
+}
