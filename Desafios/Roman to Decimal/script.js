@@ -1,13 +1,23 @@
-let algarismo = "IIIC";
+let algarismo = "CMXCIX";
 
-// let pattern_1 = /(I{4}|X{4}|C{4}|M{4})/i;
-// let pattern_2 = /((I{2}X)|(I(L|C|D|M)))/i;
-// let pattern_3 = /((X{2}(L|C))|(X(D|M)))/i;
-// let pattern_4 = /C{2}(D|M)/i;
-// let pattern_5 = /V(X|L|C|D|M|V)/i;
-// let pattern_6 = /L(C|D|M|L)/i;
-// let pattern_7 = /D(M|D)/i;
-let pattern_I = /I[^I]+I/i;
-let pattern_C = /C[^C]+C/i;
-let fullPattern = /((I{4}|X{4}|C{4}|M{4})|((I{2}X)|(I(L|C|D|M)))|((X{2}(L|C))|(X(D|M)))|C{2}(D|M)|V(X|L|C|D|M|V)|L(C|D|M|L)|D(M|D))/i;
-console.log(pattern_C.test(algarismo));
+let P1 = "(I{4}|X{4}|C{4}|M{4})"
+let P2 = "((I{2}X)|(I(L|C|D|M)))"
+let P3 = "((X{2}(L|C))|(X(D|M)))"
+let P4 = "C{2}(D|M)"
+let P5 = "V(X|L|C|D|M|V)"
+let P6 = "L(C|D|M|L)"
+let P7 = "D(M|D)"
+let P8 = "I[^I]+I"
+let P9 = "(C[^C]+CC|C[^C]+C[^C]+C)"
+let P10 = "V[^V]+V"
+let P11 = "D[^D]+D"
+let P12 = "M[^M]+M"
+let P13 = "(X[^X]+XX|X[^X]+X[^X]+X)"
+
+let pattern = `(${P1}|${P2}|${P3}|${P4}|${P5}|${P6}|${P7}|${P8}|${P9}|${P10}|${P11}|${P12}|${P13})`;
+
+let full_P = new RegExp(pattern, "i");
+console.log(full_P.test(algarismo));
+
+// let pteste = new RegExp(P10,"i");
+// console.log(pteste.test(algarismo));
