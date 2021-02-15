@@ -16,8 +16,42 @@ let P13 = "(X[^X]+XX|X[^X]+X[^X]+X)"
 
 let pattern = `(${P1}|${P2}|${P3}|${P4}|${P5}|${P6}|${P7}|${P8}|${P9}|${P10}|${P11}|${P12}|${P13})`;
 
-let full_P = new RegExp(pattern, "i");
-console.log(full_P.test(algarismo));
+let tamanhoAlgarismo = algarismo.length - 1;
+let i;
+let valorAnterior = 0;
+let soma = 0
+for(i = tamanhoAlgarismo; i>=0; i--){
+	valorAtual = valorAlgarismo(algarismo[i]);
+	if(valorAtual >= valorAnterior){
+		soma += valorAtual;
+	}else{
+		soma -= valorAtual;
+	}
+	valorAnterior = valorAtual;
+}
+console.log(soma);
 
-// let pteste = new RegExp(P10,"i");
-// console.log(pteste.test(algarismo));
+
+function valorAlgarismo(letra){
+	if(letra == 'I'){
+		return 1;
+	}
+	else if(letra == 'V'){
+		return 5;
+	}
+	else if(letra == 'X'){
+		return 10;
+	}
+	else if(letra == 'L'){
+		return 50;
+	}
+	else if(letra == 'C'){
+		return 100;
+	}
+	else if(letra == 'D'){
+		return 500;
+	}
+	else if(letra == 'M'){
+		return 1000;
+	}
+}
