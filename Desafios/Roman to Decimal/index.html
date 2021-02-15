@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman to Decimal</title>
+    <style>
+
+        #decimal{
+            width: 180px;
+            height: 20px;
+            border: 1px solid black;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form>
-    	
+    <form action="">
+        <label for="romano">Digite o algarismo romano:</label><br>
+        <input type="text" name="romano" id="romano">
+        <input onclick="converter(event)" type="submit" value="Converter">
     </form>
+    <div id="decimal"></div>
     <script src="script.js"></script>
 </body>
 </html>
