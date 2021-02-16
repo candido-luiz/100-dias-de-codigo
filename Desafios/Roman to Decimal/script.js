@@ -14,8 +14,10 @@ let P11 = "L[^L]+L"
 let P12 = "D[^D]+D"
 let P13 = "M[^M]+M"
 let P14 = "(X[^X]+XX|X[^X]+X[^X]+X)"
+let P15 = "IX[XVC]"
+let P16 = "VIX"
 
-let full_P = `(${P1}|${P2}|${P3}|${P4}|${P5}|${P6}|${P7}|${P8}|${P9}|${P10}|${P11}|${P12}|${P13}|${P14})`;
+let full_P = `(${P1}|${P2}|${P3}|${P4}|${P5}|${P6}|${P7}|${P8}|${P9}|${P10}|${P11}|${P12}|${P13}|${P14}|${P15}|${P16})`;
 let pattern = new RegExp(full_P, "i");
 
 let resultado;
