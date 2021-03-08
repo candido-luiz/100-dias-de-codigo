@@ -23,7 +23,7 @@ let pattern = new RegExp(full_P, "i");
 let resultado;
 function converter(event){
 	event.preventDefault();
-	let algarismo = document.querySelector("#romano").value;
+	let algarismo = document.querySelector("#romano").value.toUpperCase();
 	if(pattern.test(algarismo)){
 		alert("Algarismo inválido");
 	}else{
